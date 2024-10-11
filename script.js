@@ -21,7 +21,7 @@ const calculateIntrest =async () =>{
 
     const res =await fetch("http://localhost:3000/calc?p=" + prin + "&r=" + rate + "&t=" + time);
     const data  = await res.json();
-    console.log(data)
+    
 
     intrest.innerHTML = data.intrest;
     totalIntrest.innerHTML = data.total;
